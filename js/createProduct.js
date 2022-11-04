@@ -3,14 +3,12 @@ import {productDetails} from './productDetails.js'
 // function create product
 export const createProduct = item => {
   const itemContainer = document.createElement('div')
- 
-  console.log('item' , item)
 
   //create & append product img
   const img = document.createElement('img')
-    img.src= item.api_featured_image
-    itemContainer.classList.add('item_container')
-    itemContainer.appendChild(img)
+  img.src = item.api_featured_image ? item.api_featured_image : 'https://res.cloudinary.com/hapiii/image/upload/v1667586987/HYF/jof1wxcerlhzyuqufrxl.jpg'
+  itemContainer.classList.add('item_container')
+  itemContainer.appendChild(img)
 
   //create & append product name 
   const productName = document.createElement('p')
@@ -18,16 +16,22 @@ export const createProduct = item => {
   productName.textContent = item.name.substring(0, 12)+'...'
   itemContainer.appendChild(productName)
 
-  //create & append overlay
+  //create & append overlay and its content
   const overlay = document.createElement('div')
   overlay.classList.add('overlay')
-  //create link in overlay to call fun product details
-  const showDetails = document.createElement('span')
+  itemContainer.appendChild(overlay)
+
+  const showDetails = document.createElement('p')
   showDetails.textContent = 'show details'
   showDetails.classList.add('show_details')
-  
-  itemContainer.appendChild(overlay)
-  // productDetails(item) 
+  overlay.appendChild(showDetails)
+
+  const icon = document.createElement('i')
+  icon.classList = 'fa fa-info'
+  overlay.appendChild(icon)
+
+  //click on icon to show details
+  icon.addEventListener('click' , () => productDetails(item))
 
   pagination.appendChild(itemContainer)
 }

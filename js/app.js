@@ -15,6 +15,5 @@ const main = async () => {
 }
 
 
-
 window.addEventListener('load', main)
 
