@@ -1,7 +1,8 @@
 import {displayProducts} from './pagination.js'
 
-const pagination = document.getElementById('pagination')
+const paginationSec = document.getElementById('paginationSec')
 const paginationBtns = document.getElementById('paginationBtns')
+const pagination = document.getElementById('pagination')
 const searchBtn = document.getElementById('searchBtn')
 const inputField = document.getElementById('inputField')
 
@@ -40,12 +41,12 @@ export const searchBtnHandler = data => {
     const notFound = document.createElement('h2')
     notFound.classList.add('not_found')
     notFound.textContent = `Sorry, No "${inputValue}" Found, try another Product ... `
-    pagination.appendChild(notFound)
+    paginationSec.appendChild(notFound)
 
     const backHome = document.createElement('h2')
     backHome.textContent = 'Back Home'
     backHome.classList.add('back_home')
-    pagination.appendChild(backHome)
+    notFound.appendChild(backHome)
     backHome.onclick = ()=> {location.reload()}
   }
 
