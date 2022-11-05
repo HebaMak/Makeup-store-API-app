@@ -1,6 +1,5 @@
 import {displayProducts} from './pagination.js'
 
-const paginationSec = document.getElementById('paginationSec')
 const paginationBtns = document.getElementById('paginationBtns')
 const pagination = document.getElementById('pagination')
 const searchBtn = document.getElementById('searchBtn')
@@ -40,8 +39,9 @@ export const searchBtnHandler = data => {
 
     const notFound = document.createElement('h2')
     notFound.classList.add('not_found')
+    notFound.id = 'notFound'
     notFound.textContent = `Sorry, No "${inputValue}" Found, try another Product ... `
-    paginationSec.appendChild(notFound)
+    pagination.appendChild(notFound)
 
     const backHome = document.createElement('h2')
     backHome.textContent = 'Back Home'
