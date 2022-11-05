@@ -75,6 +75,23 @@
   padding: 20px 50px;
 }
 
+.not_found {
+  text-align: center;
+  margin-top: 100px;
+  background-color: var(--light-gray);
+  padding: 30px 0;
+  border: 3px solid var(--main-color);
+}
+
+.back_home {
+  font-size: 20px;
+  border: 1px solid red;
+  padding: 10px;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+}
+
 .pagination_part .pagination_buttons {
   text-align: center;
 }
@@ -119,13 +136,11 @@
   right: 0;
   padding: 3px 5px;
   font-size: 12px;
-  /* width: 50px; */
   margin: auto;
   color: #000;
   font-weight: 500;
   background-color: var(--light-color);
   cursor: pointer;
-  /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
 }
 
 

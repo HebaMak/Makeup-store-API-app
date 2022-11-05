@@ -1,4 +1,5 @@
 import {productDetails} from './productDetails.js'
+const pagination = document.getElementById('pagination')
 
 // function create product
 export const createProduct = item => {
