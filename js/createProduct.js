@@ -16,19 +16,26 @@ export const createProduct = item => {
   productName.textContent = item.name.substring(0, 12)+'...'
   itemContainer.appendChild(productName)
 
+  //create & append buynow 
+  const buyNow = document.createElement('p')
+  buyNow.classList.add('buy_now')
+  buyNow.textContent= 'Buy Now!'
+  itemContainer.appendChild(buyNow)
+
   //create & append overlay and its content
   const overlay = document.createElement('div')
   overlay.classList.add('overlay')
   itemContainer.appendChild(overlay)
 
-  const showDetails = document.createElement('p')
-  showDetails.textContent = 'show details'
-  showDetails.classList.add('show_details')
-  overlay.appendChild(showDetails)
+  const showDetailsTxt = document.createElement('p')
+  showDetailsTxt.textContent = 'show details'
+  showDetailsTxt.classList.add('show_details')
+  overlay.appendChild(showDetailsTxt)
 
   const icon = document.createElement('i')
   icon.classList = 'fa fa-info'
   overlay.appendChild(icon)
+
 
   //click on icon to show details
   icon.addEventListener('click' , () => productDetails(item))

@@ -101,6 +101,7 @@
   margin-top: 20px;
 }
 
+/* product page */
 .pagination .item_container {
   position: relative;
   width: 190px;
@@ -111,6 +112,22 @@
   padding: 10px;
   cursor: pointer;
 }
+
+.item_container .buy_now {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px 5px;
+  font-size: 12px;
+  /* width: 50px; */
+  margin: auto;
+  color: #000;
+  font-weight: 500;
+  background-color: var(--light-color);
+  cursor: pointer;
+  /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+}
+
 
 .item_container img {
   width: 100%;
@@ -142,8 +159,10 @@
 
 .overlay .show_details {
   font-size: 18px;
+  font-weight: 700;
   margin: 10px;
   text-transform: capitalize;
+  padding-top: 20px;
 }
 
 .overlay .fa-info {
@@ -180,22 +199,71 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background-color: var(--light-color);
+  background-color: #fff;
   display: flex;
   padding: 10px;
 }
 
-.product_details .details .left {
-  flex-basis: 50%;
-}
-.product_details .details .right {
-  flex-basis: 50%;
+.details_content .left {
+  flex-basis: 30%;
+  text-align: center;
+  padding-top: 30px;
 }
 
-.details-img {
-  width: 190px;
+.left .details-img {
+  width: 200px;
   height: 250px;
-  border-radius: 10px;
+  border: 1px solid var(--light-color);
+  padding: 10px;
+}
+
+.left .brand {
+  margin-top: 20px;
+}
+
+.left .buy_now {
+  padding: 30px;
+  width: 300px;
+  margin: auto;
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--main-color);
+  cursor: pointer;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.details_content .right {
+  flex-basis: 70%;
+  padding-top: 30px;
+}
+
+.right .name {
+  color: var(--main-color);
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.right h5 {
+  margin-bottom: 20px;
+}
+
+.right h5 a {
+  text-decoration: none;
+} 
+
+.right .colors span {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.right .description {
+  width: 90%;
+}
+
+.right .description span {
+  font-weight: 700;
 }
 
 @media (max-width: 500px) {

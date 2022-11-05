@@ -17,20 +17,19 @@ const {description, product_type, brand, category,
     <div class='details_content'>
       <div class='left'>
         <img src=${api_featured_image} class='details-img' alt=${name}>
-        <p>${description}</p>
-      </div>
-      <div class='right'>
-        <h3 class='name'>${name}</h3>
         <h5 class='brand'>Brand: ${brand}</h5>
-        <h5 class='category'>Category: ${category}</h5>
+        <h5 class='price'>Price: ${price}${price_sign? price_sign: '$'}</h5>
+        <p class='buy_now'>Buy Now!!! </p>
+        </div>
+        <div class='right'>
+        <h3 class='name'>${name}</h3>  
+        <h5 class='category'>Category: ${category ? category : 'UnKnown'}</h5>
         <h5 class='type'>Product type: ${product_type}</h5>
-        <h5 class='price'>Price: ${price}${price_sign}</h5>
-        <h5 class='link'>Product link: 
-        <a href=${product_link}></a>
-        </h5>
-        <h5> colors:
-        ${[... product_colors.map(color => color.colour_name)]}
-        </h5>
+        <h5 class='link'>Product link:  <a href=${product_link}>${product_link}</a></h5>
+        <p class='colors'> <span>Colors available:</span>
+          ${[... product_colors.map(color => color.colour_name)]}
+        </p>
+        <p class='description'> <span>Description:</span> ${description.substring(0,400)}...</p>
       </div>
     </div>
   </div>
