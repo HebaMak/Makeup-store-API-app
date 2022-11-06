@@ -58,12 +58,14 @@
   padding-right: 10px;
 }
 
+.dropdown-menu.products_menu.active,
 .dropdown-menu.categories_menu.active {
   display: block;
 }
 
 .dropdown-menu.categories_menu,
-.dropdown-menu.brands_menu {
+.dropdown-menu.brands_menu, 
+.dropdown-menu.products_menu{
   display: none;
 }
 
