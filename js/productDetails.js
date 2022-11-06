@@ -20,8 +20,8 @@ const {description, product_type, brand, category,
         <h5 class='brand'>Brand: ${brand}</h5>
         <h5 class='price'>Price: ${price}${price_sign? price_sign: '$'}</h5>
         <p class='buy_now'>Buy Now!!! </p>
-        </div>
-        <div class='right'>
+      </div>
+      <div class='right'>
         <h3 class='name'>${name}</h3>  
         <h5 class='category'>Category: ${category ? category : 'UnKnown'}</h5>
         <h5 class='type'>Product type: ${product_type}</h5>

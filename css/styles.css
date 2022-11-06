@@ -48,6 +48,24 @@
   border: 1px solid var(--light-color);
 }
 
+.dropdown-menu .dropdown-item {
+  cursor: pointer;
+}
+
+.dropdown-menu.brands_menu.active {
+  display: grid !important;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding-right: 10px;
+}
+
+.dropdown-menu.brands_menu {
+  display: none;
+}
+
+.dropdown-menu.brands_menu .dropdown-item {
+  cursor: pointer;
+}
+
 .bottom_nav {
   background-color: var(--main-color);
   padding: 10px;
@@ -157,7 +175,6 @@
   cursor: pointer;
   background-color: var(--light-color);
 }
-
 
 .item_container img {
   width: 100%;
