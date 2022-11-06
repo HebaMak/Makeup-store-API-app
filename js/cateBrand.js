@@ -1,6 +1,8 @@
 import {displayProducts} from './pagination.js'
 
 export const cateBrandHandler = data => {
+  console.log(new Set(data.map(el=>el.product_type)))
+
   //Categories
   //get Categories from data
   const allCategories = data.map(product => product.category)
