@@ -1,6 +1,7 @@
 import {displayProducts} from './pagination.js'
 
 export const cateBrandHandler = data => {
+  
   //Categories
   //get Categories from data
   const allCategories = data.map(product => product.category)
@@ -33,20 +34,20 @@ export const cateBrandHandler = data => {
   document.getElementById('brandId').addEventListener('click' , e => {
     e.stopPropagation()
     brandList.classList.toggle('active')
-    cateList.style.display = 'none'
+    cateList.classList.remove('active')
   })
 
   //show/hide categories list - hide brands list when open categories list
   document.getElementById('catedId').addEventListener('click' , e => {
     e.stopPropagation()
-    cateList.style.display = 'block'
+    cateList.classList.toggle('active')
     brandList.classList.remove('active')
   })
 
   //hide categories & brand lists when click on body
   document.body.addEventListener('click' , ()=> {
     brandList.classList.remove('active')
-    cateList.style.display = 'none'
+    cateList.classList.remove('active')
   })
 
   //display products according to clicked brand or category
