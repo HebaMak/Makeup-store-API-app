@@ -15,6 +15,30 @@
   text-align: center;
 }
 
+.top_nav .topnav_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topnav_content .left {
+  flex-basis: 50%;
+  text-transform: capitalize;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.topnav_content .right {
+  flex-basis: 50%;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.topnav_content .right span {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
 .navbar-nav .nav-link,
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {

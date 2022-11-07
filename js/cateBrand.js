@@ -75,8 +75,6 @@ export const cateBrandHandler = data => {
     productList.classList.remove('active')
   })
 
-
-
   //display products according to clicked brand or category or productType
   const allItems = Array.from(document.querySelectorAll('.dropdown-item'))
   
@@ -85,7 +83,6 @@ export const cateBrandHandler = data => {
     item.addEventListener('click', ()=> {
       const filteredData = data.filter(product=> product.category === itemText || product.brand === itemText || product.product_type === itemText)
       displayProducts(filteredData , pagination , 50 , 0)
-    
     })
   })
 }
