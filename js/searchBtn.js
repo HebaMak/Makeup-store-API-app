@@ -4,6 +4,9 @@ const paginationBtns = document.getElementById('paginationBtns')
 const pagination = document.getElementById('pagination')
 const searchBtn = document.getElementById('searchBtn')
 const inputField = document.getElementById('inputField')
+const topP = document.getElementById('topPart')
+const midP = document.getElementById('midPart')
+const botP = document.getElementById('botPart')
 
 export const searchBtnHandler = data => {
   let filteredData = ''
@@ -18,6 +21,10 @@ export const searchBtnHandler = data => {
   //search btn
   searchBtn.addEventListener('click' , e => {
     e.preventDefault()
+
+    topP.innerHTML = ''
+    midP.innerHTML = ''
+    botP.innerHTML = ''
 
     filteredData = data.filter(product => {
       const name = product.name.toLowerCase()
@@ -51,3 +58,4 @@ export const searchBtnHandler = data => {
   }
 
 }
+
