@@ -536,6 +536,10 @@ footer .small_screen_footer {
   }
   .top_nav .topnav_content {
     justify-content: space-between;
+    font-size: 12px;
+  }
+  .topnav_content .right span {
+    margin-left: 10px;
   }
   .topnav_content .left {
     text-align: left;
@@ -606,7 +610,105 @@ footer .small_screen_footer {
   }
 }
 
-@media (min-width: 576px) and (max-width: 765px) {  }
+@media (min-width: 576px) and (max-width: 765px) {
+  .left_aside,
+  .right_aside, 
+  .top_part .ads,
+  .pagination_btns,
+  footer .top,
+  footer .brands ,
+  footer .mid,
+  footer .bottom {
+    display: none;
+  }
+  footer .small_screen_footer {
+    display: block;
+  }
+  .navbar-toggler {
+    border: 1px solid #fff;
+    background: #fff;
+  }
+  .dropdown-menu.brands_menu.active {
+    display: grid !important;
+    grid-template-columns: 40% 40%;
+    padding-right: 0;
+  }
+  .top_nav .topnav_content {
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  .topnav_content .right span {
+    margin-left: 10px;
+  }
+  .topnav_content .left {
+    text-align: left;
+  }
+  .top_part .caresule {
+    flex-basis: 100%;
+  }
+  .content {
+    min-width: 90%;
+    margin: auto;
+  }
+  .fa-times {
+    right: 5%;
+    top: 5%;
+  }
+  .product_details .details_content {
+    width: 80%;
+    margin-left: -1%;
+    height: 80%;
+    display: block;
+    border: 3px solid var(--main-color);
+    padding: 20px;
+  }
+  .details_content .left {
+    flex-basis: 100%;
+    padding-top: 10px;
+  }
+  .left .details-img {
+    width: 170px;
+    height: 230px;
+    padding: 7px;
+  }
+  .left .brand {
+    margin-top: 10px;
+  }
+  .left .buy_now {
+    padding: 35px;
+    width: 140px;
+    font-weight: 500;
+    font-size: 11px;
+    position: absolute;
+    top:0;
+    right: 0;
+  }
+  .details_content .right {
+    flex-basis: 100%;
+    padding-top: 10px;
+  }
+  .right .name {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .right h5 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .right h5 a {
+    text-decoration: none;
+    font-size: 14px;
+  } 
+  .right .colors span {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .right .description {
+    display: none;
+  }
+}
 
 @media (min-width: 766px) and (max-width: 991px) {  }
 
