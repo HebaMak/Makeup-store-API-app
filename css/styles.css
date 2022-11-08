@@ -7,7 +7,7 @@ body {
 
 :root {
   --main-color: rgb(209, 0, 116);
-  --light-color: #e8d7e3;
+  --light-color: #ecd6e2;
   --light-gray: rgb(215, 214, 214);
 }
 
@@ -472,12 +472,18 @@ footer .top {
 }
 
 footer .brands {
-background-color: var(--light-color);
+  background-color: var(--light-color);
+}
+
+footer .brands img {
+  margin-left: 25px;
+  margin-bottom: 10px;
 }
 
 footer .mid {
   background-color: #333;
 }
+
 footer .bottom {
   background-color: #1e1e1e;
 }
