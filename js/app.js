@@ -1,6 +1,9 @@
 import { handleData } from "./handleData.js"
+import { errorMsg } from "./loadError.js"
+import { loading } from "./loadError.js"
 
 const main = async () => {
+  loading()
   try {
     const response = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json')
     if(response) {
@@ -10,7 +13,7 @@ const main = async () => {
       throw ('error')
     }
   } catch (err) {
-    console.log(err)
+    errorMsg(err)
   }
 }
 
