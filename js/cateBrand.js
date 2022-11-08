@@ -83,12 +83,14 @@ export const cateBrandHandler = data => {
   const allItems = Array.from(document.querySelectorAll('.dropdown-item'))
   
   allItems.forEach(item => {
-    topP.innerHTML = ''
-    midP.innerHTML = ''
-    botP.innerHTML = ''
-    
     const itemText = item.textContent
     item.addEventListener('click', ()=> {
+      //clear carosule and ads
+      topP.innerHTML = ''
+      midP.innerHTML = ''
+      botP.innerHTML = ''
+
+      //update pagination
       const filteredData = data.filter(product=> product.category === itemText || product.brand === itemText || product.product_type === itemText)
       displayProducts(filteredData , pagination , 50 , 0)
     })

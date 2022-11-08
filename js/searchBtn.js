@@ -22,6 +22,7 @@ export const searchBtnHandler = data => {
   searchBtn.addEventListener('click' , e => {
     e.preventDefault()
 
+    //clear carosule and ads
     topP.innerHTML = ''
     midP.innerHTML = ''
     botP.innerHTML = ''
@@ -31,8 +32,8 @@ export const searchBtnHandler = data => {
       return name.includes(inputValue.toLowerCase())
     })
 
+    //update pagination
     if(filteredData.length > 0) {
-      
       displayProducts(filteredData , pagination , 50 , 0)
     } else {
       createNotFound()
