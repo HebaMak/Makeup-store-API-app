@@ -1,5 +1,9 @@
 import {displayProducts} from './pagination.js'
 
+const topP = document.getElementById('topPart')
+const midP = document.getElementById('midPart')
+const botP = document.getElementById('botPart')
+
 export const cateBrandHandler = data => {
   
   //Categories
@@ -79,6 +83,10 @@ export const cateBrandHandler = data => {
   const allItems = Array.from(document.querySelectorAll('.dropdown-item'))
   
   allItems.forEach(item => {
+    topP.innerHTML = ''
+    midP.innerHTML = ''
+    botP.innerHTML = ''
+    
     const itemText = item.textContent
     item.addEventListener('click', ()=> {
       const filteredData = data.filter(product=> product.category === itemText || product.brand === itemText || product.product_type === itemText)
