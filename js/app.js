@@ -5,7 +5,7 @@ import { loading } from "./loadError.js"
 const main = async () => {
   loading()
   try {
-    const response = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json')
+    const response = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json')
     if(response) {
       const data = await response.json()
       handleData(data)
