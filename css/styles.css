@@ -272,17 +272,17 @@ code {
   text-align: center;
 }
 
-.pagination_buttons button {
+.pagination_buttons  .pagination_btns {
   margin-right: 1px;
   border-radius: 3px;
-  padding: 0 9px;
+  padding: 0 7px;
 }
 
-.pagination_buttons button:hover {
+.pagination_buttons  .pagination_btns:hover {
   background-color: var(--light-color);
 }
 
-.pagination_buttons button.active {
+.pagination_buttons  .pagination_btns.active {
   background-color: var(--main-color);
   color: #fff;
 }
@@ -333,25 +333,29 @@ code {
 
 .overlay {
   position: absolute;
+  top: 40%;
+  right: 0;
   left: 0;
-  bottom: 0;
   width: 100%;
-  height: 0;
-  color: #fff;
-  text-align: center;
-  transition: height .5s ease-in-out;
+  height: 30%;
+  background-color:rgba(0, 0, 0, 0.7);
   background-color: rgba(209, 0, 116,.7);
+  color: #fff;
+  transition: all .7s ease-in-out;
+  z-index: 1;
+  transform: scaleY(0);
+  text-align: center;
 }
 
 .item_container:hover .overlay {
-  height: 50%;
+  transform: scaleY(1);
 }
 
 .overlay .show_details {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 10px;
-  padding-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px 0 5px;
+  padding-bottom: 0px;
   text-transform: capitalize;
 }
 
@@ -393,6 +397,8 @@ code {
   background-color: #fff;
   transform: translate(-50%,-50%);
   border: 5px solid var(--main-color);
+  overflow: hidden;
+  word-break: break-all;
 }
 
 .details_content .left {
@@ -433,6 +439,7 @@ code {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
+  word-wrap: break-word;
 }
 
 .right h5 {
@@ -464,6 +471,10 @@ footer {
   bottom: 0;
   left: 0;
   position: absolute;
+}
+
+footer img {
+  width: 100%;
 }
 
 footer .top {
@@ -530,7 +541,6 @@ footer .small_screen_footer {
     background: #fff;
   }
   .dropdown-menu.brands_menu.active {
-    display: grid !important;
     grid-template-columns: 40% 40%;
     padding-right: 0;
   }
@@ -629,7 +639,6 @@ footer .small_screen_footer {
     background: #fff;
   }
   .dropdown-menu.brands_menu.active {
-    display: grid !important;
     grid-template-columns: 40% 40%;
     padding-right: 0;
   }
@@ -710,8 +719,115 @@ footer .small_screen_footer {
   }
 }
 
-@media (min-width: 766px) and (max-width: 991px) {  }
+@media (min-width: 766px) and (max-width: 991px) { 
+  .left_aside,
+  .right_aside, 
+  .top_part .ads,
+  .pagination_btns,
+  footer .top,
+  footer .brands ,
+  footer .mid,
+  footer .bottom {
+    display: none;
+  }
+  footer .small_screen_footer {
+    display: block;
+  }
+  .navbar-toggler {
+    border: 1px solid #fff;
+    background: #fff;
+  }
+  .dropdown-menu.brands_menu.active {
+    grid-template-columns: 30% 30% 30%;
+    padding-right: 0;
+  }
+  .top_nav .topnav_content {
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  .topnav_content .right span {
+    margin-left: 10px;
+  }
+  .topnav_content .left {
+    text-align: left;
+  }
+  .top_part .caresule {
+    flex-basis: 100%;
+  }
+  .content {
+    min-width: 90%;
+    margin: auto;
+  }
+  .fa-times {
+    right: 5%;
+    top: 5%;
+  }
+  .product_details .details_content {
+    width: 80%;
+    margin-left: -1%;
+    height: 80%;
+    display: block;
+    border: 3px solid var(--main-color);
+    padding: 20px;
+  }
+  .details_content .left {
+    flex-basis: 100%;
+    padding-top: 10px;
+  }
+  .left .details-img {
+    width: 170px;
+    height: 230px;
+    padding: 7px;
+  }
+  .left .brand {
+    margin-top: 10px;
+  }
+  .left .buy_now {
+    padding: 35px;
+    width: 140px;
+    font-weight: 500;
+    font-size: 11px;
+    position: absolute;
+    top:0;
+    right: 0;
+  }
+  .details_content .right {
+    flex-basis: 100%;
+    padding-top: 10px;
+  }
+  .right .name {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .right h5 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .right h5 a {
+    text-decoration: none;
+    font-size: 14px;
+  } 
+  .right .colors span {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .right .description {
+    display: none;
+  }
+}
 
-@media (min-width: 992px) and (max-width: 1199px) { }
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .right .description {
+    width: 100%;
+  }
+  .pagination_buttons  .pagination_btns {
+    padding: 3px;
+    font-size: 12px;
+  }
+}
 
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+
+}
