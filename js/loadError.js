@@ -7,6 +7,7 @@ export const errorMsg = err => {
   <h1>Sorry, There is an error through Fetching..</h1>
   <h2>${err.message}</h2>
   `
+  pagination.innerHTML =''
   pagination.appendChild(msg)
 }
 
