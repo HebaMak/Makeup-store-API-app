@@ -190,6 +190,7 @@ code {
   height: 900px;
   padding: 0px 50px;
   overflow: scroll;
+  overflow-x: auto;
 }
 
 .content .top_part {
@@ -486,4 +487,16 @@ footer .mid {
 
 footer .bottom {
   background-color: #1e1e1e;
+}
+
+/* media query */
+@media (max-width: 500px) {
+  .left_aside,
+  .right_aside {
+    display: none;
+  }
+  .content {
+    min-width: 90%;
+    margin: auto;
+  }
 }
