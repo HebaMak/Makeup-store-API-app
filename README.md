@@ -1,6 +1,11 @@
 ### Makeup store app
 
 - This app a single page application has one index.html file and style.css file and many js files conntected to gether to update the dom using DOM manipulation
+[![Header](https://res.cloudinary.com/hapiii/image/upload/v1667943475/HYF/api-project/fh4gpibqwimbpjd2bc8b.png)](https://some-url.dev/)
+
+[![Header](https://res.cloudinary.com/hapiii/image/upload/v1667943472/HYF/api-project/u97ku39it7nlkqww0ejq.png)](https://some-url.dev/)
+
+
 
 - This app interact with this API "https://www.iciparisxl.nl/?brd=&gclid=CjwKCAiA9qKbBhAzEiwAS4yeDXL0Tbc0XiJLCp9GwV2w79jIvO29VXYSSUgQmN4EuyzQnvNgNCBTWBoCGPEQAvD_BwE"
 
