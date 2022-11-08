@@ -29,6 +29,7 @@ export const displayProducts = (items, wrapper, rows_per_page, page)=> {
   //create pagination btns & append
   for(let i = 0 ; i < pageCount ; i ++) {
     const button = document.createElement('button')
+    button.classList = 'pagination_btns'
     button.innerText = i + 1
     paginationBtns.appendChild(button)
     
