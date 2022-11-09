@@ -11,7 +11,7 @@ App Screenshots:
 
 
 
-- This app interact with this API "https://www.iciparisxl.nl/?brd=&gclid=CjwKCAiA9qKbBhAzEiwAS4yeDXL0Tbc0XiJLCp9GwV2w79jIvO29VXYSSUgQmN4EuyzQnvNgNCBTWBoCGPEQAvD_BwE"
+- This app interact with this API "https://makeup-api.herokuapp.com/api/v1/products.json"
 
 and grab the data from it using fetch async and await
 
