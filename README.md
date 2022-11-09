@@ -15,7 +15,7 @@ App Screenshots:
 
 and grab the data from it using fetch async and await
 
-- The app has a loading img while data loading and error handling message if the API has an error, this interaction with the API showed to the user not just a console.log.
+- The app has a loading img & message while data loading and error handling message if the API has an error, this interaction with the API showed to the user not just a console.log.
 
 Loading msg:
 
@@ -37,7 +37,7 @@ like that:
 [![Header](https://res.cloudinary.com/hapiii/image/upload/v1667942127/HYF/api-project/djf7b8lb05s9btzbjomu.png)](https://some-url.dev/)
 
 
-- user can filter the products fetched from API according to the product type, category and brand by clicking on each item of those in navbar, which also grabbed from API dynamically:
+- User can filter out the products fetched from API according to the product type, category and brand by clicking on each item of those in navbar, which also grabbed from API dynamically:
 
 [![Header](https://res.cloudinary.com/hapiii/image/upload/v1667942306/HYF/api-project/xij1rjgxabccyljmtwmt.jpg)](https://some-url.dev/)
 
@@ -57,13 +57,12 @@ Results remove carousel and some ads and update the pagination to see the result
 
 - When user clear the search field, the app reload and back to homepage again. 
 
-- The app is responsive for all screens
-
+- The app is responsive for all screens.
 - Bootstrap navbar and carousel are used.
 - Ticker is a ready carousel uses jquery.
 - Font-awesome are use as well.
 
-- This app looks like the   ICI PARIS XL store site
+- I copied the app design from   ICI PARIS XL store site 
 https://www.iciparisxl.nl/?brd=&gclid=CjwKCAiA9qKbBhAzEiwAS4yeDXL0Tbc0XiJLCp9GwV2w79jIvO29VXYSSUgQmN4EuyzQnvNgNCBTWBoCGPEQAvD_BwE
 
 
