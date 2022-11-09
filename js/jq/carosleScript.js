@@ -1,4 +1,5 @@
 //ticker
+'$'
 $(function() {
   var _scroll = {
     delay: 1000,
