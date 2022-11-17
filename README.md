@@ -64,7 +64,9 @@ Results remove carousel and some ads and update the pagination to see the result
 - Bootstrap navbar and carousel are used.
 
 - Ticker is a ready carousel uses jquery.
+
 - Font-awesome are use as well.
+
 - The app link on Netlify: https://musical-bubblegum-4f1584.netlify.app/
 
 - I copied the app design from   ICI PARIS XL store site 
