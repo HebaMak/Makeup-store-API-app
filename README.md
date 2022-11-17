@@ -1,5 +1,7 @@
 ### Makeup store app
 
+- app demo on github: 
+
 - This app is a single page application has one index.html file, style.css file and many js files connected together to update the dom using DOM manipulation.
 
 App Screenshots:
