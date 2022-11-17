@@ -1,6 +1,6 @@
 ### Makeup store app
 
-- app demo on github: 
+- app demo on github: https://hebamak.github.io/Makeup-store-API-app/
 
 - This app is a single page application has one index.html file, style.css file and many js files connected together to update the dom using DOM manipulation.
 
